@@ -134,7 +134,7 @@ Run the script
 source("analysis/00_dependencies.R")
 source("analysis/01_data_process.R")
 source("analysis/02_describe.R")
-source("analysis/02_model.R")
+source("analysis/03_model.R")
 ```
 
 
@@ -166,7 +166,7 @@ Open it in your browser to view the slides.
 3. Run `00_dependencies.R` to install and load packages  
 4. Run `01_data_process.R` to clean and save data  
 5. Run `02_describe.R` to generate tables and figures 
-5. Run `02_model.R` to generate model result
+5. Run `03_model.R` to generate model result
 6. Render the presentation with Quarto  
 
 Following these steps will reproduce all outputs shown in the **"Simple, Useful R Tips — Live Demo"** presentation.
