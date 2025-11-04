@@ -5,7 +5,7 @@ rm(list=ls())
 #----2. Import the raw data ----
 raw <- read_csv(here("data","raw", "study.csv"), show_col_types = TRUE)
 names(raw)
-summary(raw)
+glimpse(raw)
 
 #----3. Clean the data ----
 

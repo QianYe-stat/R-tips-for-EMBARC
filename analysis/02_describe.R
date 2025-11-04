@@ -39,8 +39,8 @@ table1 <- table1(~ y + age + sex + bmi + age_grp + index_yr
                  render.continuous=render.cont,
                  data=dat)
 table1
-table1 <- as.data.frame(table1)
-write.csv(table1 , here("results","temp","summary_table1.csv"))
+#table1 <- as.data.frame(table1)
+#write.csv(table1 , here("results","temp","summary_table1.csv"))
 
  
 #==== 5.2 using gtsummary ====
@@ -58,6 +58,6 @@ sum_tab <- dat %>%
   as_gt()
 
 sum_tab 
-gt::gtsave(sum_tab, here("results","temp","summary_table2.png"))
+gt::gtsave(sum_tab, here("figures","summary_table2.png"))
  
 

@@ -15,7 +15,7 @@ fit_glm <- glm(y ~ treatment + I(age/10) + sex + age_grp, data = dat, family = b
 summary(fit_glm)
 
 #---- 4. display the model results
-t1 <- fit_glm %>% tbl_regression(exponentiate = TRUE,
+mod <- fit_glm %>% tbl_regression(exponentiate = TRUE,
                      pvalue_fun = label_style_pvalue(digits = 3),
                      label = list(treatment ~ "Treatment group", 
                                   'I(age/10)' ~ "Age (per 10 years)",
@@ -24,6 +24,8 @@ t1 <- fit_glm %>% tbl_regression(exponentiate = TRUE,
   add_global_p() %>% 
   bold_p(t = 0.05) %>% 
   bold_labels() |>
-  italicize_levels()
+  italicize_levels() %>% 
+  as_gt
 
-t1
+mod
+gt::gtsave(mod, here("results","temp","model.png"))
