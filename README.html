@@ -422,9 +422,8 @@ efficiently</p>
 <div id="step-0-clone-the-repository" class="section level3">
 <h3><strong>Step 0 — Clone the repository</strong></h3>
 <p>Open a terminal or RStudio console and run:</p>
-<pre class="bash"><code>git clone https://github.com/&lt;your-username&gt;/R-tips-for-EMBARC.git
-cd R-tips-for-EMBARC</code></pre>
-<p>or</p>
+<p><code>{bash} git clone https://github.com/&lt;your-username&gt;/R-tips-for-EMBARC.git cd R-tips-for-EMBARC</code>
+or</p>
 <p>Download the entire repo as a .Zip file in your local path.</p>
 <p>This will create a local copy of the project folder.</p>
 <hr />
@@ -507,16 +506,13 @@ package<br />
 <li><code>figures/model.png</code></li>
 </ul></li>
 </ul>
-<pre class="r"><code>source(&quot;analysis/00_dependencies.R&quot;)
-source(&quot;analysis/01_data_process.R&quot;)
-source(&quot;analysis/02_describe.R&quot;)
-source(&quot;analysis/02_model.R&quot;)</code></pre>
+<p><code>{r} source(&quot;analysis/00_dependencies.R&quot;) source(&quot;analysis/01_data_process.R&quot;) source(&quot;analysis/02_describe.R&quot;) source(&quot;analysis/02_model.R&quot;)</code></p>
 </div>
 <div id="step-3-render-the-quarto-presentation" class="section level3">
 <h3><strong>Step 3 — Render the Quarto presentation</strong></h3>
 <p>Use <strong>Quarto</strong> to render the interactive Reveal.js
 slides:</p>
-<pre class="bash"><code>quarto render reports/live demo.qmd</code></pre>
+<p><code>{bash} quarto render reports/live demo.qmd</code></p>
 <p>This will generate an HTML presentation (<code>live demo.html</code>)
 inside the <code>reports/</code> folder.<br />
 Open it in your browser to view the slides.</p>

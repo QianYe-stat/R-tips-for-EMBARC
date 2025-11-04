@@ -71,7 +71,7 @@ R-tips-for-EMBARC/
 
 Open a terminal or RStudio console and run:
 
-```bash
+```{bash}
 git clone https://github.com/<your-username>/R-tips-for-EMBARC.git
 cd R-tips-for-EMBARC
 ```
@@ -108,8 +108,8 @@ Run the script
   3. Cleans variable names using `janitor::clean_names()`  
   4. Derives new variables such as `age_grp` and `index_yr`  
   5. Saves the cleaned dataset to:
-   - `data/clean/study_clean.csv`  
-   - `data/clean/study_clean.rds`
+    - `data/clean/study_clean.csv`  
+    - `data/clean/study_clean.rds`
 
 
 - `analysis/02_describe.R`
@@ -130,7 +130,7 @@ Run the script
   5. Saves outputs to:
    - `figures/model.png`
 
-```r
+```{r}
 source("analysis/00_dependencies.R")
 source("analysis/01_data_process.R")
 source("analysis/02_describe.R")
@@ -142,7 +142,7 @@ source("analysis/02_model.R")
 
 Use **Quarto** to render the interactive Reveal.js slides:
 
-```bash
+```{bash}
 quarto render reports/live demo.qmd
 ```
 
