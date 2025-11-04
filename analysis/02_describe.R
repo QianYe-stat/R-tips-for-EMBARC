@@ -58,6 +58,6 @@ sum_tab <- dat %>%
   as_gt()
 
 sum_tab 
-gt::gtsave(sum_tab, here("figures","summary_table2.png"))
+gt::gtsave(sum_tab, here("figures","table.png"))
  
 

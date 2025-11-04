@@ -28,4 +28,4 @@ mod <- fit_glm %>% tbl_regression(exponentiate = TRUE,
   as_gt
 
 mod
-gt::gtsave(mod, here("results","temp","model.png"))
+gt::gtsave(mod, here("figures","model.png"))

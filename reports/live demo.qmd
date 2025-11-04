@@ -192,7 +192,7 @@ sum_tab <- dat %>%
   as_gt()
 
 sum_tab 
-#gt::gtsave(sum_tab, here("results","temp","summary_table2.png"))
+#gt::gtsave(sum_tab, here("figures","table.png"))
 ```
 
 ------------------------------------------------------------------------
@@ -201,7 +201,7 @@ sum_tab
 
 clean, professional formatting that aligns with journal standards
 
-![](../figures/summary_table2.png){width=70% fig-align="center"}
+![](../figures/table.png){width=70% fig-align="center"}
 ---
 
 ## Step 3 — Fit model
@@ -238,7 +238,7 @@ mod <- fit_glm %>% tbl_regression(exponentiate = TRUE,
   as_gt
 
 mod
-gt::gtsave(mod, here("figures","model.png"))
+#gt::gtsave(mod, here("figures","model.png"))
 
 ```
 
@@ -265,7 +265,7 @@ references/     # references/reading materials
 README.md       # read me file
 R-tips-for-EMBARC.Rproj # open this in RStudio
 ```
-+ Analyse the data in efficient and reproducible workflow
++ Analyse the data in efficient and reproducible order
 ```
  analysis/00_dependencies.R - install/load packages
  analysis/01_data_process.R - import and clean the raw data
@@ -274,15 +274,19 @@ R-tips-for-EMBARC.Rproj # open this in RStudio
 ```
 ---
 
-# # Takeaways
+# Takeaways
 
+✔️ Use **R project + `here`** --> robust paths and reproducibility
 
-Use **Projects + here + renv** → paths & reproducibility
+✔️ **`gtsummary`** --> publication-quality descriptive and model tables
 
-&#x2705 **table1 + gtsummary** → publication-quality descriptives
+✔️ Keep scripts modular & outputs organized
 
-✅ **broom + modelsummary** → clean model tables
+---
 
-✅ **Quarto** → code + text + output in one file
+# Thank you
 
-✅ Keep scripts modular & outputs organized
+Slides & demo files:
+👉 GitHub: [QianYe-stat/R-tips-for-EMBARC](https://github.com/QianYe-stat/R-tips-for-EMBARC.git)
+
+Let's open RStudio and walk through!
