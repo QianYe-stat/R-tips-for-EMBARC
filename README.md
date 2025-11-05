@@ -151,7 +151,7 @@ Open it in your browser to view the slides.
 
 ---
 
-### **Step 6 — View the outputs**
+### **Step 4 — View the outputs**
 
 - **Figures** → located in `figures/model.png` and `figures/table.png` 
 - **Results** → intermediate CSV or RDS files in `results/temp/`  
