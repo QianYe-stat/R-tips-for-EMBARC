@@ -130,7 +130,7 @@ Run the script
   5. Saves outputs to:
    - `figures/model.png`
 
-```r
+```{r}
 source("analysis/00_dependencies.R")
 source("analysis/01_data_process.R")
 source("analysis/02_describe.R")
