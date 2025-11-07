@@ -72,7 +72,7 @@ R-tips-for-EMBARC/
 Open a terminal or RStudio console and run:
 
 ```{bash}
-git clone https://github.com/<your-username>/R-tips-for-EMBARC.git
+git clone https://github.com/QianYe-stat/R-tips-for-EMBARC.git
 cd R-tips-for-EMBARC
 ```
 or
