@@ -278,7 +278,7 @@ R-tips-for-EMBARC.Rproj # open this in RStudio
 
 ✔️ Use **R project + `here`** --> robust paths and reproducibility
 
-✔️ **`gtsummary`** --> publication-quality descriptive and model tables (see the tutorial [here](https://github.com/ddsjoberg/gtsummary.git))
+✔️ **`gtsummary`** --> publication-quality descriptive and model tables (check the [tutorial] (https://github.com/ddsjoberg/gtsummary.git))
 
 ✔️ Keep scripts modular & outputs organized
 
