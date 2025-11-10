@@ -1,6 +1,6 @@
 #---- 1. source the dependencies file ----
 library(here)
-source(here("analysis","00_dependencies.R"))
+source(here("analysis","00_dependencies.R")) 
 rm(list=ls())
 
 #---- 2. import the clean data ----
