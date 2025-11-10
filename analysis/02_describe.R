@@ -39,7 +39,7 @@ table1 <- table1(~ y + age + sex + bmi + age_grp + index_yr
                  render.continuous=render.cont,
                  data=dat)
 table1
-#table1 <- as.data.frame(table1)
+table1 <- as.data.frame(table1)
 #write.csv(table1 , here("results","temp","summary_table1.csv"))
 
  
